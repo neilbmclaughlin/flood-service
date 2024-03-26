@@ -11,7 +11,7 @@
     "start:local": "nodemon -r dotenv/config index.js",
     "unit-test": "export LOG_LEVEL=silent && lab -v -c -r console -o stdout -r lcov -o coverage/lcov.info --require dotenv/config",
     "test": "npm run lint && npm run unit-test",
-    "create-release-notes": "node create-release-notes.js"
+    "create-release-notes": "node release-docs/lib/create-release-notes.js"
   },
   "author": "",
   "license": "ISC",
